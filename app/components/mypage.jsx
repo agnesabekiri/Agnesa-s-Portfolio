@@ -1,24 +1,24 @@
 import React from "react";
 
+
 function HomeContent() {
   return (
-    <div>
-      <header>
-        <h1>My Home Page</h1>
-      </header>
+    <div style={{backgroundColor: "#f5f5f3", padding: "40px"  }}>
 
-      <div>
-        <p>
-          This is my portfolio. A little bit about me: I'm a Freshman at UIC majoring in Computer Science.
-        </p>
+      <h1 style={{ fontSize: "80px", textAlign: "center", color: "black"}}>
+        Agnesa's Portfolio
+      </h1>
 
-        <img
-          src="/globe.svg"
-          alt="Globe"
-          width={300}
-        />
+      <div style={{position: "relative", textAlign: "center"}}>
+        <div style={{backgroundColor: "#859866", height: "300px", width: "90%", margin: "0 auto", borderRadius: "30px" }}>
+
+        </div>
       </div>
     </div>
+      
+
+    
+      
   );
 }
 
