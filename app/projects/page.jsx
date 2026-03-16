@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../components/navbar";
 
 const Projects = () => {
 
@@ -10,11 +9,12 @@ const Projects = () => {
   const [showLouvre, setShowLouvre] = useState(false);
 
   return (
-    <div>
+    <div id="projects">
 
-      <Navbar />
+      <hr style={{ boarder:"none", height: "2px", backgroundColor: "203354",margin:"60px 0"}}
+      />
 
-      <h1 style={{ textAlign: "center", fontSize: "60px", fontFamily: "serif" }}>
+      <h1 style={{ textAlign: "center", fontSize: "65px", fontFamily: "serif" }}>
         Projects
       </h1>
 

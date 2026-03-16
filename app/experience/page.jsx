@@ -1,12 +1,13 @@
 import React from "react";
-import Navbar from "../components/navbar";
+
 
 const Experience = () => {
     return(
-        <div> 
-        <Navbar />
+        <div id="experience"> 
+         <hr style={{ boarder:"none", height: "2px", backgroundColor: "203354",margin:"60px 0"}}
+          />
 
-        <h1 style={{textAlign:"center", fontSize:"60px", fontFamily:"serif"}}>
+        <h1 style={{textAlign:"center", fontSize:"65px", fontFamily:"serif"}}>
             Experience
         </h1>
         <div
@@ -14,7 +15,7 @@ const Experience = () => {
           maxWidth: "700px",
           margin: "0 auto",
           fontFamily: "serif",
-          fontSize: "16px",
+          fontSize: "24px",
           lineHeight: "1.5"
         }}
       >
