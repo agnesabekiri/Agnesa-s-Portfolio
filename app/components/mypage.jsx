@@ -5,7 +5,7 @@ function HomeContent() {
   return (
     <div id="home" style={{padding: "40px"  }}>
 
-      <h1 style={{ fontSize: "80px", textAlign: "center", fontFamily: "seri"}}>
+      <h1 style={{ fontSize: "80px", textAlign: "center", fontFamily: "serif"}}>
         Agnesa's Portfolio
       </h1>
 

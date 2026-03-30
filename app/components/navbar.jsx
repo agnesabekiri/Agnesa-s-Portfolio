@@ -40,6 +40,13 @@ export default function Navbar() {
           Projects
           <span className="absolute w-0 h-[2px] -bottom-1 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-900 via-indigo-700 to-purple-600 transition-all duration-300 ease-out group-hover:w-full rounded-sm"></span>
         </Link>
+        <Link
+            href="#contact"
+            className="group relative font-semibold text-[1.05rem] tracking-[0.5px] transition-all duration-300 py-1 capitalize text-gray-800 hover:opacity-80 hover:-translate-y-[1px]"
+          >
+            Contact
+            <span className="absolute w-0 h-[2px] -bottom-1 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-900 via-indigo-700 to-purple-600 transition-all duration-300 ease-out group-hover:w-full rounded-sm"></span>
+          </Link>
       </div>
 
 

@@ -7,7 +7,7 @@ const Experience = () => {
          <hr style={{ boarder:"none", height: "2px", backgroundColor: "203354",margin:"60px 0"}}
           />
 
-        <h1 style={{textAlign:"center", fontSize:"65px", fontFamily:"serif"}}>
+        <h1 style={{textAlign:"center", fontSize:"65px", fontFamily:"serif", color:"#203354"}}>
             Experience
         </h1>
         <div
@@ -16,7 +16,8 @@ const Experience = () => {
           margin: "0 auto",
           fontFamily: "serif",
           fontSize: "24px",
-          lineHeight: "1.5"
+          lineHeight: "1.5",
+          color:"#203354"
         }}
       >
         <p><strong>IT Intern</strong></p>

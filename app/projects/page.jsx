@@ -3,76 +3,134 @@
 import React, { useState } from "react";
 
 const Projects = () => {
-
   const [showPantry, setShowPantry] = useState(false);
   const [showBike, setShowBike] = useState(false);
   const [showLouvre, setShowLouvre] = useState(false);
 
   return (
-    <div id="projects">
+    <div id="projects" style={styles.container}>
+      <h1 style={styles.title}>Projects</h1>
 
-      <hr style={{ boarder:"none", height: "2px", backgroundColor: "203354",margin:"60px 0"}}
-      />
+      <div style={styles.columns}>
+        
+        <div style={styles.column}>
+          <button style={styles.button} onClick={() => setShowPantry(!showPantry)}>
+            Pantryful
+          </button>
 
-      <h1 style={{ textAlign: "center", fontSize: "65px", fontFamily: "serif" }}>
-        Projects
-      </h1>
+          {showPantry && (
+            <div style={styles.card}>
+              <h2 style={styles.heading}>Pantryful</h2>
+              <hr style={styles.line} />
+              <p style={styles.center}><b>Role:</b> Full-Stack Developer</p>
+              <p style={styles.center}><b>Project Experience:</b></p>
+              <p style={styles.text}>
+                Collaborated in a team of three to develop PantryFul, an AI-powered web application that helps users manage pantry inventory and generate meal suggestions based on available ingredients. Built backend functionality using Python and integrated Google Gemini API to deliver intelligent recommendations. Developed a frontend with Streamlit for a user-friendly experience.
+              </p>
+              <p style={styles.center}><b>Tools Used:</b></p>
+              <p style={styles.center}>Python, Streamlit, Google Gemini API</p>
+            </div>
+          )}
+        </div>
 
-      
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
+        <div style={styles.column}>
+          <button style={styles.button} onClick={() => setShowBike(!showBike)}>
+            Baker Bike Heist
+          </button>
 
-        <button
-          style={{ border: "2px solid black", padding: "10px", margin: "10px", borderRadius: "10px" }}
-          onClick={() => setShowPantry(!showPantry)}
-        >
-          PantryFul
-        </button>
+          {showBike && (
+            <div style={styles.card}>
+              <h2 style={styles.heading}>Baker Bike Heist</h2>
+              <hr style={styles.line} />
+              <p style={styles.center}><b>Role:</b> Developer</p>
+              <p style={styles.center}><b>Project Experience:</b></p>
+              <p style={styles.text}>
+                Collaborated with a team of three to design and develop a multi-stage animated adventure game using Python and Turtle graphics. Built gameplay systems including movement, collision detection, and boss fight mechanics. Won 1st place in class for best gameplay design.
+              </p>
+              <p style={styles.center}><b>Tools Used:</b></p>
+              <p style={styles.center}>Python, Turtle Graphics</p>
+            </div>
+          )}
+        </div>
 
-        <button
-          style={{ border: "2px solid black", padding: "10px", margin: "10px", borderRadius: "10px" }}
-          onClick={() => setShowBike(!showBike)}
-        >
-          Baker Bike Heist
-        </button>
+        <div style={styles.column}>
+          <button style={styles.button} onClick={() => setShowLouvre(!showLouvre)}>
+            Louvre Escape
+          </button>
 
-        <button
-          style={{ border: "2px solid black", padding: "10px", margin: "10px", borderRadius: "10px" }}
-          onClick={() => setShowLouvre(!showLouvre)}
-        >
-          Louvre Escape
-        </button>
+          {showLouvre && (
+            <div style={styles.card}>
+              <h2 style={styles.heading}>Louvre Escape</h2>
+              <hr style={styles.line} />
+              <p style={styles.center}><b>Role:</b> Developer</p>
+              <p style={styles.center}><b>Project Experience:</b></p>
+              <p style={styles.text}>
+                Developed a console-based adventure game where players navigate a virtual museum under a countdown timer. Built modular mechanics including movement, item collection, hazards, and challenges using Python.
+              </p>
+              <p style={styles.center}><b>Tools Used:</b></p>
+              <p style={styles.center}>Python</p>
+            </div>
+          )}
+        </div>
 
       </div>
-
-    
-      {showPantry && (
-        <div style={{ border: "1px solid gray", padding: "20px", marginTop: "20px", maxWidth: "600px", margin: "20px auto" }}>
-          <h2>PantryFul</h2>
-          <p><b>Role:</b> Full-Stack Developer</p>
-          <p>AI web app that suggests meals based on pantry items.</p>
-        </div>
-      )}
-
-     
-      {showBike && (
-        <div style={{ border: "1px solid gray", padding: "20px", marginTop: "20px", maxWidth: "600px", margin: "20px auto" }}>
-          <h2>Baker Bike Heist</h2>
-          <p><b>Role:</b> Game Developer</p>
-          <p>Python Turtle adventure game with puzzles and boss fight.</p>
-        </div>
-      )}
-
-     
-      {showLouvre && (
-        <div style={{ border: "1px solid gray", padding: "20px", marginTop: "20px", maxWidth: "600px", margin: "20px auto" }}>
-          <h2>Louvre Escape</h2>
-          <p><b>Role:</b> Developer</p>
-          <p>Python puzzle game set in the Louvre museum.</p>
-        </div>
-      )}
-
     </div>
   );
+};
+
+const styles = {
+  container: {
+    padding: "80px 20px",
+    fontFamily: "Georgia, serif",
+    textAlign: "center",
+    color:"#203354",
+  },
+  title: {
+    fontSize: "65px",
+    marginBottom: "60px",
+  },
+  columns: {
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "40px",
+  },
+  column: {
+    width: "33%",
+  },
+  button: {
+    width: "100%",
+    padding: "18px",
+    borderRadius: "40px",
+    border: "none",
+    backgroundColor: "#203354",
+    color: "white",
+    fontSize: "18px",
+    cursor: "pointer",
+    marginBottom: "20px",
+  },
+  card: {
+    backgroundColor: "#f5f5f5",
+    padding: "30px",
+    borderRadius: "20px",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+  },
+  heading: {
+    fontSize: "28px",
+    marginBottom: "10px",
+    color:"#203354",
+  },
+  line: {
+    margin: "10px 0 20px 0",
+  },
+  center: {
+    textAlign: "center",
+    marginBottom: "10px",
+  },
+  text: {
+    textAlign: "center",
+    lineHeight: "1.6",
+    marginBottom: "20px",
+  },
 };
 
 export default Projects;

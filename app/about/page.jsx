@@ -13,7 +13,7 @@ const About = () => {
         }}
       />
 
-      <h1 style={{ textAlign: "center", fontSize: "65px", fontFamily: "serif" }}>
+      <h1 style={{ textAlign: "center", fontSize: "65px", fontFamily: "serif", color:"#203354" }}>
         About me
       </h1>
 
@@ -28,7 +28,7 @@ const About = () => {
         }}
       >
 
-        {/* navy box */}
+        
         <div
           style={{
             backgroundColor: "#203354",
