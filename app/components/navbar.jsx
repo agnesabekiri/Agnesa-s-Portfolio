@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="grid grid-cols-3 items-center py-5 px-10 bg-white border-b border-gray-500/20 sticky top-0 z-50 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
       
-      {/* LEFT */}
+      
       <div className="justify-self-start">
         <Link
           href="#home"
@@ -15,7 +15,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* CENTER */}
+      
       <div className="flex justify-center gap-12">
         <Link
           href="#about"
@@ -42,7 +42,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* RIGHT SPACER */}
+
       <div></div>
     </nav>
   );
