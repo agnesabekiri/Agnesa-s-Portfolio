@@ -13,23 +13,29 @@ const About = () => {
         }}
       />
 
-      <h1 style={{ textAlign: "center", fontSize: "65px", fontFamily: "serif", color:"#203354" }}>
+      <h1
+        style={{
+          textAlign: "center",
+          fontSize: "65px",
+          fontFamily: "serif",
+          color: "#203354"
+        }}
+      >
         About me
       </h1>
 
-      
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
           maxWidth: "1200px",
           margin: "40px auto",
-         
         }}
       >
 
         
         <div
+          className="hover-box"
           style={{
             backgroundColor: "#203354",
             color: "white",
@@ -71,25 +77,35 @@ const About = () => {
             make an impact.
           </p>
         </div>
-        
 
-        <div style={{backgroundColor:"#203354", padding:"20px", borderRadius:"16px", width:"350px",display:"flex",justifyContetent:"center", alignItems:"center"}}> 
-          <img 
+
+        <div
+          className="hover-box"
+          style={{
+            backgroundColor: "#203354",
+            padding: "20px",
+            borderRadius: "16px",
+            width: "350px",
+            display: "flex",
+            justifyContent: "center", 
+            alignItems: "center"
+          }}
+        >
+          <img
             src="/myself.JPG"
             alt="Agnesa"
             style={{
-              width:"100%",
-              borderRadius:"12px",
+              width: "100%",
+              borderRadius: "12px",
               objectFit: "cover"
             }}
-            />
-
-
+          />
         </div>
+
       </div>
 
     </div>
   );
-}
+};
 
 export default About;

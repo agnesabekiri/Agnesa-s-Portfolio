@@ -6,3 +6,23 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+.hover-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-img:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.hover-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}

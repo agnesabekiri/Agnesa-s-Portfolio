@@ -35,6 +35,21 @@ const Contact = () => {
         >
           LinkedIn ↗
         </a>
+
+
+        <a
+          href="https://github.com/agnesabekiri"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            ...styles.button,
+            transform: pressed === 'github' ? 'translateY(2px)' : 'translateY(0)',
+          }}
+          onMouseDown={() => setPressed('github')}
+          onMouseUp={() => setPressed(null)}
+        >
+          GitHub ↗
+        </a>
       </div>
     </div>
   )

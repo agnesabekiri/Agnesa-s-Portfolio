@@ -13,6 +13,7 @@ const Projects = () => {
 
       <div style={styles.columns}>
         
+        {/* Pantryful */}
         <div style={styles.column}>
           <button style={styles.button} onClick={() => setShowPantry(!showPantry)}>
             Pantryful
@@ -29,10 +30,20 @@ const Projects = () => {
               </p>
               <p style={styles.center}><b>Tools Used:</b></p>
               <p style={styles.center}>Python, Streamlit, Google Gemini API</p>
+
+              <a
+                href="https://github.com/NSiddiqui226/Pantryful"
+                target="_blank"
+                rel="noreferrer"
+                style={styles.linkButton}
+              >
+                GitHub Link ↗
+              </a>
             </div>
           )}
         </div>
 
+        {/* Baker Bike Heist */}
         <div style={styles.column}>
           <button style={styles.button} onClick={() => setShowBike(!showBike)}>
             Baker Bike Heist
@@ -49,10 +60,20 @@ const Projects = () => {
               </p>
               <p style={styles.center}><b>Tools Used:</b></p>
               <p style={styles.center}>Python, Turtle Graphics</p>
+
+              <a
+                href="https://github.com/agnesabekiri/Baker-Bike-Heist"
+                target="_blank"
+                rel="noreferrer"
+                style={styles.linkButton}
+              >
+                GitHub Link ↗
+              </a>
             </div>
           )}
         </div>
 
+        {/* Louvre Escape */}
         <div style={styles.column}>
           <button style={styles.button} onClick={() => setShowLouvre(!showLouvre)}>
             Louvre Escape
@@ -83,7 +104,7 @@ const styles = {
     padding: "80px 20px",
     fontFamily: "Georgia, serif",
     textAlign: "center",
-    color:"#203354",
+    color: "#203354",
   },
   title: {
     fontSize: "65px",
@@ -117,7 +138,7 @@ const styles = {
   heading: {
     fontSize: "28px",
     marginBottom: "10px",
-    color:"#203354",
+    color: "#203354",
   },
   line: {
     margin: "10px 0 20px 0",
@@ -130,6 +151,16 @@ const styles = {
     textAlign: "center",
     lineHeight: "1.6",
     marginBottom: "20px",
+  },
+  linkButton: {
+    display: "inline-block",
+    marginTop: "20px",
+    padding: "400",
+    borderRadius: "30px",
+    backgroundColor: "#203354",
+    color: "white",
+    textDecoration: "none",
+    fontSize: "15px",
   },
 };
 
